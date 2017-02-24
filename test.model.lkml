@@ -13,7 +13,7 @@ explore: agg_play {
     relationship: many_to_one
   }
 
-  join: play {
+  join: plays {
     type: left_outer
     sql_on: ${agg_play.play_id} = ${play.play_id} ;;
     relationship: many_to_one
